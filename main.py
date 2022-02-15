@@ -104,7 +104,7 @@ class NFT:
         while x < int(howMany):
             toCreate = []
             imageLayers = []
-            createdString = "";
+            createdString = ""
             for y in range(self.layers):
                 toCreate.append(random.randint(0, layers[y] - 1))
 
