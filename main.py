@@ -110,8 +110,7 @@ class NFT:
 
             for y in range(len(toCreate)):
                 createdString = createdString + str(toCreate[y])
-                imageLayers.append(
-                    Image.open("NFTparts/layer" + str(y) + "/" + str(toCreate[y]) + ".png").convert("RGBA"))
+                imageLayers.append(Image.open("NFTparts/layer" + str(y) + "/" + str(toCreate[y]) + ".png").convert("RGBA"))
 
             for y in range(len(imageLayers)):
                 imageLayers[0].paste(imageLayers[y], (0, 0), imageLayers[y])
@@ -129,7 +128,7 @@ class NFT:
 
 
 # here you set up your NFT generation
-# you can set up more layers and other output folder like NFT(10,"myFolder")
+# you can set up more layers and other output folder like yourNFT = NFT(10,"myFolder")
 yourNFT = NFT()
 
 # start. Also you can do it like this yourNFT.generateNFT(10) so it doesn't ask how many but generates 10
